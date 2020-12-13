@@ -1,0 +1,56 @@
+&& ======================================================================== &&
+&& Class eTokenCode
+&& ======================================================================== &&
+Define Class eTokenCode As Custom
+	tEndofStream = 0
+	tIdentifier = 1
+	tFloat = 2
+	tInteger = 3
+	tString = 4
+	tPlus = 5
+	tMinus = 6
+	tMult = 7
+	tDivide = 8
+	tPower = 9
+	tDiv = 10
+	tMod = 11
+	tLessThan = 12
+	tLessThanOrEqual = 13
+	tMoreThan = 14
+	tMoreThanOrEqual = 15
+	tNotEqual = 16
+	tRightParenthesis = 17
+	tLeftParenthesis = 18
+	tLeftBracket = 19
+	tRightBracket = 20
+	tLeftCurleyBracket = 21
+	tRightCurleyBracket = 22
+	tEquals = 23
+	tEquivalence = 24
+	tApostrophy = 25
+	tDollar = 26
+	tSemicolon = 27
+	tColon = 28
+	tComma = 29
+	tAnd = 30
+	tOr = 31
+	tNot = 32
+	tXor = 33
+	tEnd = 34
+	tIf = 35
+	tThen = 36
+	tElse = 37
+	tFalse = 38
+	tTrue = 39
+	tFor = 40
+	tDo = 41
+	tTo = 42
+	tDownTo = 43
+	tWhile = 44
+	tRepeat = 45
+	tUntil = 46
+	tOf = 47
+	tBreak = 48
+	tFunction = 49
+	tPrint = 50
+Enddefine
