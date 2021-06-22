@@ -1,5 +1,3 @@
-Cd c:\desarrollo\mygarbage\vfp\rhoduslang\
-
 =AddProperty(_Screen, "cPath", Addbs(Justpath(Sys(16))))
 =AddProperty(_Screen, "oScanner", .Null.)
 
