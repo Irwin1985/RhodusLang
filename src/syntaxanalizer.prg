@@ -1,23 +1,9 @@
-Clear
-Cd c:\desarrollo\mygarbage\vfp\rhoduslang\src\
-*!*	sa = CreateObject("SyntaxAnalysis")
-Set Procedure To "RhodusLexer" Additive
-sc = CreateObject("RhodusLexer")
-sc.ScanString('print 5 + 6')
-sa = CreateObject("SyntaxAnalysis", sc)
-Set Step On
-Try
-	sa.program()
-Catch to loEx
-	?loEx.Message
-endtry
-
 && ******************************************************************************************* &&
 &&  PROGRAMA:        SYNTAXANALIZER.PRG
 &&  AUTOR:           IRWIN
 &&  FECHA:           22 July 2020, 16:33:10
 &&  RESUMEN:         Analizador sintactico para Rohdus
-&&  RENDIMIENTO: 	 Big-O(n²)
+&&  RENDIMIENTO: 	 Big-O(nÂ²)
 && ******************************************************************************************* &&
 Define Class SyntaxAnalysis As Custom
 	sc = .Null.
@@ -106,7 +92,7 @@ Define Class SyntaxAnalysis As Custom
 	EndFunc
 && ======================================================================== &&
 && Function Expect
-&& Espera que el token pasado por parámetro sea igual al del lexer.
+&& Espera que el token pasado por parÃ¡metro sea igual al del lexer.
 && ======================================================================== &&
 	Function Expect
 		Lparameters tnTokenExpected As Integer
