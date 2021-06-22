@@ -1,22 +1,3 @@
-Clear
-*Set Step On
-Cd c:\desarrollo\mygarbage\vfp\rhoduslang\src
-sc = Createobject("RhodusLexer")
-*sc.ScanFile("C:\DESARROLLO\MyGarbage\vfp\RhodusLang\Test\test.rh")
-sc.ScanString('print "Hello World"')
-sc.NextToken()
-?sc.ToString(sc.Token)
-
-*Set Step On
-*!*	Try
-*!*		sc.NextToken()
-*!*		Do While sc.Token != 0
-*!*			?sc.ToString(sc.Token)
-*!*			sc.NextToken()
-*!*		Enddo
-*!*	Catch To oExp
-*!*		?oExp.Message
-*!*	Endtry
 && ======================================================================== &&
 && Class Scanner
 && ======================================================================== &&
@@ -60,7 +41,7 @@ Define Class RhodusLexer As Session
 			.Fch 			 = ""
 			.nColumnNumber   = 0
 			.nLineNumber	 = 0
-			.oReader 		 = Createobject("StreamReader")
+			.oReader         = Createobject("StreamReader")
 			.oTokenCode 	 = Createobject("eTokenCode")
 			.nKeywordCounter = 0
 			.CreateTokenRecord()
