@@ -1,17 +1,3 @@
-*!*	Clear
-*!*	loReader = CreateObject("StreamReader")
-*!*	loReader.SetString(FileToStr("C:\VUTILS\PROGS\ftp2.prg"))
-*!*	?Seconds()
-*!*	nTimes = 0
-*!*	Do While !loReader.EndOfStream
-*!*		nTimes = nTimes + 1
-*!*		lcChar = loReader.Read()
-*!*	*!*		?Iif(lcChar == Chr(13), "CR", Iif(lcChar == Chr(10), "LF", lcChar))
-*!*	EndDo
-*!*	?Seconds()
-*!*	?nTimes, "veces"
-
-
 && ======================================================================== &&
 && Class StreamReader
 && ======================================================================== &&
